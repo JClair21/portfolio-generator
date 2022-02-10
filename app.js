@@ -1,4 +1,10 @@
-const profileDataArgs = process.argv.slice(2, process.argv.length);
+const generatePage = () => 'Name: Jane, Github: janehub';
+
+
+console.log(generatePage());
+
+
+/*const profileDataArgs = process.argv.slice(2, process.argv.length);
 
 const [name, github] = profileDataArgs
 const generatePage = (name, github) => {
