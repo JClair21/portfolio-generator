@@ -1,52 +1,15 @@
-const generatePage = () => 'Name: Jane, Github: janehub';
+const profileDataArgs = process.argv.slice(2, process.argv.length);
 
+const name = profileDaraArgs[0];
 
-console.log(generatePage());
+const github = profileDataArgs[1];
 
+const generatePage = (userName, githubName) => {
 
-/*const profileDataArgs = process.argv.slice(2, process.argv.length);
-
-const [name, github] = profileDataArgs
-const generatePage = (name, github) => {
     return `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>Portfolio Demo</title>
-    </head>
-
-    <body>
-    <h1>${name}</h1>
-    <h2><a href="https://github.com/${github}">Github</a></h2>
-    </body>
-    </html>
+    Name: ${userName}
+    Github: ${githubName}
     `;
 };
+
 console.log(generatePage(name, github));
-
-        /* Name: ${userName}
-        Github: ${githubName}
-    `;
-};
-
-(userName, githubName) => `Name: ${userName}, Github: ${githubName}`;
-console.log(name, github);
-
-const profileDataArgs = process.argv.slice(2);
-
-const printProfileData = profileDataArr => {
-    //This...
-    for (let i = 0; i < profileDataArr.length; i += 1) {
-    console.log(profileDataArr[i]);
-    }
-
-    console.log('================');
-
-    //Is the same as this...
-profileDataArr.forEach(profileItem => console.log(profileItem));
-};
-
-printProfileData(profileDataArgs);
-*/
